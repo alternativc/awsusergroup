@@ -1,3 +1,6 @@
-remote_theme: pages-themes/hacker@v0.2.0
+remote_theme: pages-themes/architect@v0.2.0
 plugins:
 - jekyll-remote-theme
+
+title: [AWS User Group Ljubljana]
+description: [The AWS User Group Ljubljana is a community in Ljubljana, Slovenia, focused on Amazon Web Services. They hold regular meetings to discuss AWS developments, share knowledge, and network with other members.]
