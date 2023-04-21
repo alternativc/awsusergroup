@@ -13,4 +13,5 @@ A huge thank you too all our sponsors that help make our community great!
 - [Alef Distribucija SI](https://www.alef.com)
 - [Celtra](https://www.celtra.com)
 ## Talks
-- [20230420 - Karpenter: Efficient scaling of Kubernetes clusters; What is happening in your AWS accounts](meetups/20230420/)
+- [2023-04-20 - Viktor Vedmich: Efficient scaling of Kubernetes clusters](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230420/Viktor%20Vedmich%20-%20Efficient%20scaling%20of%20Kubernetes%20clusters.pdf)
+- [2023-04-20 - Gregor Ratajc: What is happening in your AWS accounts](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230420/Gregor%20Ratajc%20-%20What%20is%20happening%20in%20your%20AWS%20account.pdf)
