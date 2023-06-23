@@ -13,7 +13,9 @@ A huge thank you too all our sponsors that help make our community great!
 - [Alef Distribucija SI](https://www.alef.com)
 - [Celtra](https://www.celtra.com)
 ## Talks
-- [2023-05-18 - Nikola Radojlovic -  Spot by NetApp](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230518/Nikola%20Radojlovic%20-%20%20Spot%20by%20NetApp.pdf)
-- [2023-05-18 - Ankit Mehta - FinOps for AWS](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230518/Ankit%20Mehta%20-%20FinOps%20for%20AWS.pdf)
+- [2023-06-15 - David Grgič: Lambda in Dynamo DB](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230615/David%20Grgi%C4%8D%20-%20Lambda%20in%20Dynamo%20DB.pdf)
+- [2023-06-15 - David Vidmar & Kaja Jaklin: Od ideje do realizacije](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230615/David%20Vidmar%20%26%20Kaja%20Jaklin%20-%20Od%20ideje%20do%20realizacije.pdf)
+- [2023-05-18 - Nikola Radojlovic:  Spot by NetApp](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230518/Nikola%20Radojlovic%20-%20%20Spot%20by%20NetApp.pdf)
+- [2023-05-18 - Ankit Mehta: FinOps for AWS](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230518/Ankit%20Mehta%20-%20FinOps%20for%20AWS.pdf)
 - [2023-04-20 - Viktor Vedmich: Efficient scaling of Kubernetes clusters](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230420/Viktor%20Vedmich%20-%20Efficient%20scaling%20of%20Kubernetes%20clusters.pdf)
 - [2023-04-20 - Gregor Ratajc: What is happening in your AWS accounts](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230420/Gregor%20Ratajc%20-%20What%20is%20happening%20in%20your%20AWS%20account.pdf)
