@@ -13,7 +13,7 @@ A huge thank you too all our sponsors that help make our community great!
 - [Alef Distribucija SI](https://www.alef.com)
 - [Celtra](https://www.celtra.com)
 ## Talks
-- [2023-08-31 - Urban Jurca: IAM Identity Center with AWS Organizations](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230831/Urban%20Jurca%20-%20IAM%20Identity%20Center%20with%20AWS%20Organizations.pdf
+- [2023-08-31 - Urban Jurca: IAM Identity Center with AWS Organizations](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230831/Urban%20Jurca%20-%20IAM%20Identity%20Center%20with%20AWS%20Organizations.pdf)
 - [2023-07-27 - Alen Krmelj: Evolution of an exchange](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230727/Alen%20Krmelj%20-%20Evolution%20of%20an%20exchange.pdf)
 - [2023-07-27 - Andraž Brodnik: ECS Case Study](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230727/Andra%C5%BE%20Brodnik%20-%20ECS%20Case%20Study.pdf)
 - [2023-06-15 - David Grgič: Lambda in Dynamo DB](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230615/David%20Grgi%C4%8D%20-%20Lambda%20in%20Dynamo%20DB.pdf)
