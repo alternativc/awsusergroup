@@ -14,6 +14,7 @@ A huge thank you too all our sponsors that help make our community great!
 - [Celtra](https://www.celtra.com)
 ## Talks
 - [2023-09-28 - Rok Motaln: Taming the cloud](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230928/Rok%20Motaln%20-%20Taming%20the%20cloud.pdf)
+- [2023-09-28 - Leona Dispali: AWS Trainings by ALEF](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230928/Leona%20Dispali%20-%20AWS%20Trainings%20by%20ALEF.pdf)
 - [2023-08-31 - Urban Jurca: IAM Identity Center with AWS Organizations](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230831/Urban%20Jurca%20-%20IAM%20Identity%20Center%20with%20AWS%20Organizations.pdf)
 - [2023-07-27 - Alen Krmelj: Evolution of an exchange](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230727/Alen%20Krmelj%20-%20Evolution%20of%20an%20exchange.pdf)
 - [2023-07-27 - Andraž Brodnik: ECS Case Study](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230727/Andra%C5%BE%20Brodnik%20-%20ECS%20Case%20Study.pdf)
