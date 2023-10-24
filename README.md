@@ -13,8 +13,8 @@ A huge thank you too all our sponsors that help make our community great!
 - [Alef Distribucija SI](https://www.alef.com)
 - [Celtra](https://www.celtra.com)
 ## Talks
-- [2023-10-19 - Jernej Porenta: Lessons learned building secure AWS environment](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231010/Jernej%20Porenta%20-%20Lessons%20learned%20building%20secure%20AWS%20environment.pdf)
-- [2023-10-19 - Marko Ostanek: Checkpoint Cloud Native Security](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231010/Marko%20Ostanek%20-%20Checkpoint%20Cloud%20Native%20Security.pdf)
+- [2023-10-19 - Jernej Porenta: Lessons learned building secure AWS environment](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231019/Jernej%20Porenta%20-%20Lessons%20learned%20building%20secure%20AWS%20environment.pdf)
+- [2023-10-19 - Marko Ostanek: Checkpoint Cloud Native Security](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231019/Marko%20Ostanek%20-%20Checkpoint%20Cloud%20Native%20Security.pdf)
 - [2023-09-28 - Rok Motaln: Taming the cloud](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230928/Rok%20Motaln%20-%20Taming%20the%20cloud.pdf)
 - [2023-09-28 - Leona Dispali: AWS Trainings by ALEF](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230928/Leona%20Dispali%20-%20AWS%20Trainings%20by%20ALEF.pdf)
 - [2023-08-31 - Urban Jurca: IAM Identity Center with AWS Organizations](https://github.com/alternativc/awsusergroup/blob/master/meetups/20230831/Urban%20Jurca%20-%20IAM%20Identity%20Center%20with%20AWS%20Organizations.pdf)
