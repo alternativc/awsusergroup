@@ -12,6 +12,7 @@ A huge thank you too all our sponsors that help make our community great!
 - [Bitstamp](https://www.bitstamp.net)
 - [Alef Distribucija SI](https://www.alef.com)
 - [Celtra](https://www.celtra.com)
+- [3fs](https://www.3fs.cloud/)
 ## Talks
 - [2021-12-21 - Dzenan Dzevlan: re:Cap](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231221/Dzenan%20Dzevlan%20-%20re%3ACap.pdf)
 - [2023-11-23 - Marios Parthenios: Generative AI on AWS](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231123/Marios%20Parthenios%20-%20Generative%20AI%20on%20AWS.pdf)
