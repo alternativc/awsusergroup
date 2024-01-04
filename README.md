@@ -1,19 +1,25 @@
 # AWS User Group Ljubljana
+
 🚀 Welcome to AWS User Group Ljubljana: Your Cloud Adventure Awaits! 🚀
 Embark on a thrilling cloud journey with the Ljubljana chapter of the Amazon Web Services User Group! We are a vibrant community of AWS enthusiasts, trailblazers, and explorers, united by our passion for the ever-expanding universe of AWS and cloud computing.
 
 ## Important links to follow
+
 - [Github Repository](https://github.com/alternativc/awsusergroup/)
 - [AWS User Group Ljubljana Meetup Page](https://www.meetup.com/aws-user-group-ljubljana)
 - [Slovenian Tech Community](https://sloveniantech.slack.com/)
 
 ## Sponsors
+
 A huge thank you too all our sponsors that help make our community great!
+
 - [Bitstamp](https://www.bitstamp.net)
 - [Alef Distribucija SI](https://www.alef.com)
 - [Celtra](https://www.celtra.com)
 - [3fs](https://www.3fs.cloud/)
+
 ## Talks
+
 - [2021-12-21 - Dzenan Dzevlan: re:Cap](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231221/Dzenan%20Dzevlan%20-%20re%3ACap.pdf)
 - [2023-11-23 - Marios Parthenios: Generative AI on AWS](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231123/Marios%20Parthenios%20-%20Generative%20AI%20on%20AWS.pdf)
 - [2023-10-19 - Jernej Porenta: Lessons learned building secure AWS environment](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231019/Jernej%20Porenta%20-%20Lessons%20learned%20building%20secure%20AWS%20environment.pdf)
