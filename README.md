@@ -20,7 +20,9 @@ A huge thank you too all our sponsors that help make our community great!
 
 ## Talks
 
-- [2021-12-21 - Dzenan Dzevlan: re:Cap](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231221/Dzenan%20Dzevlan%20-%20re%3ACap.pdf)
+- [2024-01-25 - Jure Zvelc: Bitstamp user history activity](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240125/Jure%20Zvelc%20-%20bitstamp%20user%20history%20activity%20meetup.pdf)
+- [2024-01-25 - Petar Repac: Introduction into AWS CDK](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240125/Petar%20Repac%20-%20Introduction%20into%20AWS%20CDK.pdf)
+- [2023-12-21 - Dzenan Dzevlan: re:Cap](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231221/Dzenan%20Dzevlan%20-%20re%3ACap.pdf)
 - [2023-11-23 - Marios Parthenios: Generative AI on AWS](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231123/Marios%20Parthenios%20-%20Generative%20AI%20on%20AWS.pdf)
 - [2023-10-19 - Jernej Porenta: Lessons learned building secure AWS environment](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231019/Jernej%20Porenta%20-%20Lessons%20learned%20building%20secure%20AWS%20environment.pdf)
 - [2023-10-19 - Marko Ostanek: Checkpoint Cloud Native Security](https://github.com/alternativc/awsusergroup/blob/master/meetups/20231019/Marko%20Ostanek%20-%20Checkpoint%20Cloud%20Native%20Security.pdf)
