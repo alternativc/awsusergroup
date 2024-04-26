@@ -20,6 +20,8 @@ A huge thank you too all our sponsors that help make our community great!
 
 ## Talks
 
+- [2024-04-25 - Jaka Demšar: Bitstamp Datalake to Data Lakehouse](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240425/Jaka%20Dem%C5%A1ar%20-%20bitstamp-datalake-to-data%20lakehouse.pdf)
+- [2024-04-25 - Aleš Kotnik: Spark in Production](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240425/Ale%C5%A1%20Kotnik%20-%20spark-in-production.pdf)
 - [2024-03-28 - Uroš Bajželj: Deploying AWS infrastructure with Terragrunt](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240328/Uros%20Bajzelj%20-%20Deploying%20AWS%20infrastructure%20with%20Terragrunt.pdf)
 - [2024-02-15 - Wojtek Gawronski: Build verifiable and effective application authorization in 40 minutes](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240215/Wojtek%20Gawronski%20-%20build-verifiable-and-effective-application-authorization-in-40-minutes.pdf)
 - [2024-01-25 - Jure Zvelc: Bitstamp user history activity](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240125/Jure%20Zvelc%20-%20bitstamp%20user%20history%20activity%20meetup.pdf)
