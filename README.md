@@ -20,6 +20,7 @@ A huge thank you too all our sponsors that help make our community great!
 
 ## Talks
 
+- [2024-07-25 - Urban Jurca: Confidential Computing](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240725/Urban%20Jurca%20-%20Confidential%20Computing.pdf)
 - [2024-05-30 - Mitja Hofer: SOCI Indexed Containers](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240530/Mitja%20Hofer%20-%20SOCI%20Indexed%20Containers.pdf)
 - [2024-05-30 - Aljaž Mežnarič: Tips and Tricks](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240530/Aljaz%20Meznaric%20-%20Tips%20and%20tricks.pdf)
 - [2024-04-25 - Jaka Demšar: Bitstamp Datalake to Data Lakehouse](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240425/Jaka%20Dem%C5%A1ar%20-%20bitstamp-datalake-to-data%20lakehouse.pdf)
