@@ -20,6 +20,7 @@ A huge thank you too all our sponsors that help make our community great!
 
 ## Talks
 
+- [2024-09-26 - Anej Skubic: We Want a Managed Database](https://github.com/alternativc/awsugergroup/blob/master/meetups/20240926/Anej%20Skubic%20-%20We%20want%20managed%20database.pdf)
 - [2024-08-29 - Alen Krmelj: A Refined Approach to Testing Databases](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240829/Alen%20Krmelj%20-%20A%20Refined%20Approach%20to%20Database%20Migrations.pdf)
 - [2024-07-25 - Urban Jurca: Confidential Computing](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240725/Urban%20Jurca%20-%20Confidential%20computing.pdf)
 - [2024-05-30 - Mitja Hofer: SOCI Indexed Containers](https://github.com/alternativc/awsusergroup/blob/master/meetups/20240530/Mitja%20Hofer%20-%20SOCI%20Indexed%20Containers.pdf)
