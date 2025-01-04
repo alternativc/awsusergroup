@@ -13,13 +13,16 @@ Embark on a thrilling cloud journey with the Ljubljana chapter of the Amazon Web
 
 A huge thank you too all our sponsors that help make our community great!
 
-- [Bitstamp](https://www.bitstamp.net)
 - [Alef Distribucija SI](https://www.alef.com)
+- [Bitstamp](https://www.bitstamp.net)
 - [Celtra](https://www.celtra.com)
 - [3fs](https://www.3fs.cloud/)
+- [MUK](https://muk.group)
+- [Sportradar](https://www.sportradar.com)
 
 ## Talks
 
+- [2024-12-18 - Marko Bevc: Landing Zone up and running](https://github.com/alternativc/awsusergroup/blob/master/meetups/20241218/Marko%20Bevc%20-%20Landing%20Zone%20up%20and%20running.pdf)
 - [2024-11-28 - Marko Licina: Getting started with NIS-2](https://github.com/alternativc/awsusergroup/blob/master/meetups/20241128/Marko%20Licina%20-%20Getting%20started%20with%20NIS-2.pdf)
 - [2024-11-28 - Arpad Csoke: Generative AI on AWS](https://github.com/alternativc/awsusergroup/blob/master/meetups/20241128/Arpad%20Csoke%20-%20Generative%20AI%20on%20AWS.pdf)
 - [2024-10-24 - Lovro Gasperin: AWS Serverless](https://github.com/alternativc/awsusergroup/blob/master/meetups/20241024/Lovro%20Gasperin%20-%20AWS%20Serverless.pdf)
