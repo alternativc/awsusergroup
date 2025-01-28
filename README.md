@@ -22,6 +22,7 @@ A huge thank you too all our sponsors that help make our community great!
 
 ## Talks
 
+- [2025-01-23 - Viktor Vedmich: re:Cap 2024](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250123/reCap-Summary-2024.pdf)
 - [2024-12-18 - Marko Bevc: Landing Zone up and running](https://github.com/alternativc/awsusergroup/blob/master/meetups/20241218/Marko%20Bevc%20-%20Landing%20Zone%20up%20and%20running.pdf)
 - [2024-11-28 - Marko Licina: Getting started with NIS-2](https://github.com/alternativc/awsusergroup/blob/master/meetups/20241128/Marko%20Licina%20-%20Getting%20started%20with%20NIS-2.pdf)
 - [2024-11-28 - Arpad Csoke: Generative AI on AWS](https://github.com/alternativc/awsusergroup/blob/master/meetups/20241128/Arpad%20Csoke%20-%20Generative%20AI%20on%20AWS.pdf)
