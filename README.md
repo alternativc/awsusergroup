@@ -18,10 +18,12 @@ A huge thank you too all our sponsors that help make our community great!
 - [Celtra](https://www.celtra.com)
 - [3fs](https://www.3fs.cloud/)
 - [MUK](https://muk.group)
+- [Mainstream](https://mainstream.eu/)
 - [Sportradar](https://www.sportradar.com)
 
 ## Talks
 
+- [2025-02-27 - Andraž Brodnik: Challenges with Aurora PSQL](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250227/aurora.pdf)
 - [2025-01-23 - Viktor Vedmich: re:Cap 2024](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250123/reCap-Summary-2024.pdf)
 - [2024-12-18 - Marko Bevc: Landing Zone up and running](https://github.com/alternativc/awsusergroup/blob/master/meetups/20241218/Marko%20Bevc%20-%20Landing%20Zone%20up%20and%20running.pdf)
 - [2024-11-28 - Marko Licina: Getting started with NIS-2](https://github.com/alternativc/awsusergroup/blob/master/meetups/20241128/Marko%20Licina%20-%20Getting%20started%20with%20NIS-2.pdf)
