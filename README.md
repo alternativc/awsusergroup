@@ -23,6 +23,8 @@ A huge thank you too all our sponsors that help make our community great!
 
 ## Talks
 
+- [2025-04-24 - Teodor Podobnik: Reducing cold start delays in FaaS and Serverless Environments](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250424/Teodor%20Podobnik%20-%20Reducing%20cold%20start%20delays%20in%20FaaS%20and%20Serverless%20Environments.pdf)
+- [2025-04-24 - Mitja Hofer: AWS SageMaker in Production](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250424/Mitja%20Hofer%20-%20AWS%20SageMaker%20in%20Production.pdf)
 - [2025-02-27 - Andraž Brodnik: Challenges with Aurora PSQL](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250227/aurora.pdf)
 - [2025-01-23 - Viktor Vedmich: re:Cap 2024](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250123/reCap-Summary-2024.pdf)
 - [2024-12-18 - Marko Bevc: Landing Zone up and running](https://github.com/alternativc/awsusergroup/blob/master/meetups/20241218/Marko%20Bevc%20-%20Landing%20Zone%20up%20and%20running.pdf)
