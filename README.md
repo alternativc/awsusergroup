@@ -23,6 +23,7 @@ A huge thank you too all our sponsors that help make our community great!
 
 ## Talks
 
+- [2025-07-24 - Primož Vampelj: AWS Copilot](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250724/AWS%20Copilot.pdf)
 - [2025-06-26 - Gregor Ratajc: First Steps with AWS CloudHSM](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250626/Gregor%20Ratajc%20-%20First%20Steps%20with%20AWS%20CloudHSM.pdf)
 - [2025-06-26 - Jernej Porenta: Secrets handling in cloud environments](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250626/Jernej%20Porenta%20-%20Secrets%20handling%20in%20cloud%20environments.pdf)
 - [2025-05-29 - Timotej Petrovčič: Disaster recovery systems for RDS and S3](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250529/Timotej%20Petrov%C4%8Di%C4%8D%20-%20Disaster%20Recovery%20Sytems%20for%20RDS%20and%20S3.pdf)
