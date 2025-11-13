@@ -23,6 +23,8 @@ A huge thank you too all our sponsors that help make our community great!
 
 ## Talks
 
+- [2025-09-30 - Alen Krmelj: Cloud stack behind Crypto Exchange](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250930/Cloud%20Stack%20Behind%20Crypto%20Exchange.pdf)
+- [2025-09-30 - Urban Jurca: Our APN Journey](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250724/AWS%20APN%20Journey.pdf)
 - [2025-07-24 - Primož Vampelj: AWS Copilot](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250724/AWS%20Copilot.pdf)
 - [2025-06-26 - Gregor Ratajc: First Steps with AWS CloudHSM](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250626/Gregor%20Ratajc%20-%20First%20Steps%20with%20AWS%20CloudHSM.pdf)
 - [2025-06-26 - Jernej Porenta: Secrets handling in cloud environments](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250626/Jernej%20Porenta%20-%20Secrets%20handling%20in%20cloud%20environments.pdf)
