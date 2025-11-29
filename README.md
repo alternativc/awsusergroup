@@ -23,6 +23,7 @@ A huge thank you too all our sponsors that help make our community great!
 
 ## Talks
 
+- [2025-11-26 - Tilen Tomakić: Global Speed on Low-Traffic Routes with CloudFront](https://github.com/alternativc/awsusergroup/blob/a9f08e5e3f309ca37cbc45aab5b01c95661e0fab/meetups/20251126/AWS%20meetup_%20Global%20Speed%20on%20Low-Traffic%20Routes%20with%20CloudFront.pdf)
 - [2025-09-30 - Alen Krmelj: Cloud stack behind Crypto Exchange](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250930/Cloud%20Stack%20Behind%20Crypto%20Exchange.pdf)
 - [2025-09-30 - Urban Jurca: Our APN Journey](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250724/AWS%20APN%20Journey.pdf)
 - [2025-07-24 - Primož Vampelj: AWS Copilot](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250724/AWS%20Copilot.pdf)
