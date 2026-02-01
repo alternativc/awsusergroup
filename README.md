@@ -23,6 +23,8 @@ A huge thank you too all our sponsors that help make our community great!
 
 ## Talks
 
+- [2026-01-29 - Marko ServerlessLife: How to Succeed with Serverless in a Post-Serverless World](https://github.com/alternativc/awsusergroup/blob/master/meetups/20260129/How%20to%20succeed%20with%20serverless%20in%20a%20post-serverless%20world.pdf)
+- [2026-01-29 - Urban Jurca: AWS European Sovereign Cloud](https://github.com/alternativc/awsusergroup/blob/master/meetups/20260129/AWS-European-Sovereign-Cloud.pdf)
 - [2025-11-26 - Dror Speiser: My Fargate Startup is Slow](https://github.com/drorspei/misc/blob/master/notebooks/aws-ljubljana/fargate-talk/talk.ipynb)
 - [2025-11-26 - Tilen Tomakić: Global Speed on Low-Traffic Routes with CloudFront](https://github.com/alternativc/awsusergroup/blob/a9f08e5e3f309ca37cbc45aab5b01c95661e0fab/meetups/20251126/AWS%20meetup_%20Global%20Speed%20on%20Low-Traffic%20Routes%20with%20CloudFront.pdf)
 - [2025-09-30 - Alen Krmelj: Cloud stack behind Crypto Exchange](https://github.com/alternativc/awsusergroup/blob/master/meetups/20250930/Cloud%20Stack%20Behind%20Crypto%20Exchange.pdf)
