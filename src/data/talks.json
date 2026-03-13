@@ -1,0 +1,272 @@
+[
+  {
+    "date": "2026-01-29",
+    "title": "How to Succeed with Serverless in a Post-Serverless World",
+    "speaker": "Marko ServerlessLife",
+    "url": "/meetups/20260129/How to succeed with serverless in a post-serverless world.pdf"
+  },
+  {
+    "date": "2026-01-29",
+    "title": "AWS European Sovereign Cloud",
+    "speaker": "Urban Jurca",
+    "url": "/meetups/20260129/AWS-European-Sovereign-Cloud.pdf"
+  },
+  {
+    "date": "2025-11-26",
+    "title": "My Fargate Startup is Slow",
+    "speaker": "Dror Speiser",
+    "url": "https://github.com/drorspei/misc/blob/master/notebooks/aws-ljubljana/fargate-talk/talk.ipynb"
+  },
+  {
+    "date": "2025-11-26",
+    "title": "Global Speed on Low-Traffic Routes with CloudFront",
+    "speaker": "Tilen Tomakić",
+    "url": "/meetups/20251126/AWS meetup_ Global Speed on Low-Traffic Routes with CloudFront.pdf"
+  },
+  {
+    "date": "2025-09-30",
+    "title": "Cloud Stack Behind Crypto Exchange",
+    "speaker": "Alen Krmelj",
+    "url": "/meetups/20250930/Cloud Stack Behind Crypto Exchange.pdf"
+  },
+  {
+    "date": "2025-09-30",
+    "title": "Our APN Journey",
+    "speaker": "Urban Jurca",
+    "url": "/meetups/20250724/AWS APN Journey.pdf"
+  },
+  {
+    "date": "2025-07-24",
+    "title": "AWS Copilot",
+    "speaker": "Primož Vampelj",
+    "url": "/meetups/20250724/AWS Copilot.pdf"
+  },
+  {
+    "date": "2025-07-24",
+    "title": "AWS Free Tier Updates",
+    "speaker": "Mitja Hofer",
+    "url": "/meetups/20250724/free_tier_updates.pdf"
+  },
+  {
+    "date": "2025-06-26",
+    "title": "First Steps with AWS CloudHSM",
+    "speaker": "Gregor Ratajc",
+    "url": "/meetups/20250626/Gregor Ratajc - First Steps with AWS CloudHSM.pdf"
+  },
+  {
+    "date": "2025-06-26",
+    "title": "Secrets Handling in Cloud Environments",
+    "speaker": "Jernej Porenta",
+    "url": "/meetups/20250626/Jernej Porenta - Secrets handling in cloud environments.pdf"
+  },
+  {
+    "date": "2025-05-29",
+    "title": "Disaster Recovery Systems for RDS and S3",
+    "speaker": "Timotej Petrovčič",
+    "url": "/meetups/20250529/Timotej Petrovčič - Disaster Recovery Sytems for RDS and S3.pdf"
+  },
+  {
+    "date": "2025-04-24",
+    "title": "Reducing Cold Start Delays in FaaS and Serverless Environments",
+    "speaker": "Teodor Podobnik",
+    "url": "/meetups/20250424/Teodor Podobnik - Reducing cold start delays in FaaS and Serverless Environments.pdf"
+  },
+  {
+    "date": "2025-04-24",
+    "title": "AWS SageMaker in Production",
+    "speaker": "Mitja Hofer",
+    "url": "/meetups/20250424/Mitja Hofer - AWS SageMaker in Production.pdf"
+  },
+  {
+    "date": "2025-02-27",
+    "title": "Challenges with Aurora PSQL",
+    "speaker": "Andraž Brodnik",
+    "url": "/meetups/20250227/aurora.pdf"
+  },
+  {
+    "date": "2025-01-23",
+    "title": "re:Cap 2024",
+    "speaker": "Viktor Vedmich",
+    "url": "/meetups/20250123/reCap-Summary-2024.pdf"
+  },
+  {
+    "date": "2024-12-18",
+    "title": "Landing Zone Up and Running",
+    "speaker": "Marko Bevc",
+    "url": "/meetups/20241218/Marko Bevc - Landing Zone up and running.pdf"
+  },
+  {
+    "date": "2024-11-28",
+    "title": "Getting Started with NIS-2",
+    "speaker": "Marko Licina",
+    "url": "/meetups/20241128/Marko Licina - Getting started with NIS-2.pdf"
+  },
+  {
+    "date": "2024-11-28",
+    "title": "Generative AI on AWS",
+    "speaker": "Arpad Csoke",
+    "url": "/meetups/20241128/Arpad Csoke - Generative AI on AWS.pdf"
+  },
+  {
+    "date": "2024-10-24",
+    "title": "AWS Serverless",
+    "speaker": "Lovro Gasperin",
+    "url": "/meetups/20241024/Lovro Gasperin - AWS Serverless.pdf"
+  },
+  {
+    "date": "2024-09-26",
+    "title": "We Want a Managed Database",
+    "speaker": "Anej Skubic",
+    "url": "/meetups/20240926/Anej Skubic - We want managed database.pdf"
+  },
+  {
+    "date": "2024-08-29",
+    "title": "A Refined Approach to Testing Databases",
+    "speaker": "Alen Krmelj",
+    "url": "/meetups/20240829/Alen Krmelj - A Refined Approach to Database Migrations.pdf"
+  },
+  {
+    "date": "2024-07-25",
+    "title": "Confidential Computing",
+    "speaker": "Urban Jurca",
+    "url": "/meetups/20240725/Urban Jurca - Confidential computing.pdf"
+  },
+  {
+    "date": "2024-05-30",
+    "title": "SOCI Indexed Containers",
+    "speaker": "Mitja Hofer",
+    "url": "/meetups/20240530/Mitja Hofer - SOCI Indexed Containers.pdf"
+  },
+  {
+    "date": "2024-05-30",
+    "title": "Tips and Tricks",
+    "speaker": "Aljaž Mežnarič",
+    "url": "/meetups/20240530/Aljaz Meznaric - Tips and tricks.pdf"
+  },
+  {
+    "date": "2024-04-25",
+    "title": "Bitstamp Datalake to Data Lakehouse",
+    "speaker": "Jaka Demšar",
+    "url": "/meetups/20240425/Jaka Demšar - bitstamp-datalake-to-data lakehouse.pdf"
+  },
+  {
+    "date": "2024-04-25",
+    "title": "Spark in Production",
+    "speaker": "Aleš Kotnik",
+    "url": "/meetups/20240425/Aleš Kotnik - spark-in-production.pdf"
+  },
+  {
+    "date": "2024-03-28",
+    "title": "Deploying AWS Infrastructure with Terragrunt",
+    "speaker": "Uroš Bajželj",
+    "url": "/meetups/20240328/Uros Bajzelj - Deploying AWS infrastructure with Terragrunt.pdf"
+  },
+  {
+    "date": "2024-02-15",
+    "title": "Build Verifiable and Effective Application Authorization in 40 Minutes",
+    "speaker": "Wojtek Gawronski",
+    "url": "/meetups/20240215/Wojtek Gawronski - build-verifiable-and-effective-application-authorization-in-40-minutes.pdf"
+  },
+  {
+    "date": "2024-01-25",
+    "title": "Bitstamp User History Activity",
+    "speaker": "Jure Zvelc",
+    "url": "/meetups/20240125/Jure Zvelc - bitstamp user history activity meetup.pdf"
+  },
+  {
+    "date": "2024-01-25",
+    "title": "Introduction into AWS CDK",
+    "speaker": "Petar Repac",
+    "url": "/meetups/20240125/Petar Repac - Introduction into AWS CDK.pdf"
+  },
+  {
+    "date": "2023-12-21",
+    "title": "re:Cap 2023",
+    "speaker": "Dzenan Dzevlan",
+    "url": "/meetups/20231221/Dzenan Dzevlan - re:Cap.pdf"
+  },
+  {
+    "date": "2023-11-23",
+    "title": "Generative AI on AWS",
+    "speaker": "Marios Parthenios",
+    "url": "/meetups/20231123/Marios Parthenios - Generative AI on AWS.pdf"
+  },
+  {
+    "date": "2023-10-19",
+    "title": "Lessons Learned Building Secure AWS Environment",
+    "speaker": "Jernej Porenta",
+    "url": "/meetups/20231019/Jernej Porenta - Lessons learned building secure AWS environment.pdf"
+  },
+  {
+    "date": "2023-10-19",
+    "title": "Checkpoint Cloud Native Security",
+    "speaker": "Marko Ostanek",
+    "url": "/meetups/20231019/Marko Ostanek - Checkpoint Cloud Native Security.pdf"
+  },
+  {
+    "date": "2023-09-28",
+    "title": "Taming the Cloud",
+    "speaker": "Rok Motaln",
+    "url": "/meetups/20230928/Rok Motaln - Taming the cloud.pdf"
+  },
+  {
+    "date": "2023-09-28",
+    "title": "AWS Trainings by ALEF",
+    "speaker": "Leona Dispali",
+    "url": "/meetups/20230928/Leona Dispali - AWS Trainings by ALEF.pdf"
+  },
+  {
+    "date": "2023-08-31",
+    "title": "IAM Identity Center with AWS Organizations",
+    "speaker": "Urban Jurca",
+    "url": "/meetups/20230831/Urban Jurca - IAM Identity Center with AWS Organizations.pdf"
+  },
+  {
+    "date": "2023-07-27",
+    "title": "Evolution of an Exchange",
+    "speaker": "Alen Krmelj",
+    "url": "/meetups/20230727/Alen Krmelj - Evolution of an exchange.pdf"
+  },
+  {
+    "date": "2023-07-27",
+    "title": "ECS Case Study",
+    "speaker": "Andraž Brodnik",
+    "url": "/meetups/20230727/Andraž Brodnik - ECS Case Study.pdf"
+  },
+  {
+    "date": "2023-06-15",
+    "title": "Lambda in Dynamo DB",
+    "speaker": "David Grgič",
+    "url": "/meetups/20230615/David Grgič - Lambda in Dynamo DB.pdf"
+  },
+  {
+    "date": "2023-06-15",
+    "title": "Od ideje do realizacije",
+    "speaker": "David Vidmar & Kaja Jaklin",
+    "url": "/meetups/20230615/David Vidmar & Kaja Jaklin - Od ideje do realizacije.pdf"
+  },
+  {
+    "date": "2023-05-18",
+    "title": "Spot by NetApp",
+    "speaker": "Nikola Radojlovic",
+    "url": "/meetups/20230518/Nikola Radojlovic -  Spot by NetApp.pdf"
+  },
+  {
+    "date": "2023-05-18",
+    "title": "FinOps for AWS",
+    "speaker": "Ankit Mehta",
+    "url": "/meetups/20230518/Ankit Mehta - FinOps for AWS.pdf"
+  },
+  {
+    "date": "2023-04-20",
+    "title": "Efficient Scaling of Kubernetes Clusters",
+    "speaker": "Viktor Vedmich",
+    "url": "/meetups/20230420/Viktor Vedmich - Efficient scaling of Kubernetes clusters.pdf"
+  },
+  {
+    "date": "2023-04-20",
+    "title": "What is Happening in Your AWS Account",
+    "speaker": "Gregor Ratajc",
+    "url": "/meetups/20230420/Gregor Ratajc - What is happening in your AWS account.pdf"
+  }
+]

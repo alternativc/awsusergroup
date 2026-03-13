@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #1a1f36;
+  --color-secondary: #232946;
+  --color-purple: #6c3fc5;
+  --color-magenta: #b5547a;
+  --color-rust: #c5623e;
+  --color-orange: #e88b2e;
+  --color-lilac: #a78bca;
+  --color-gold: #e8c840;
+  --color-muted: #6b7394;
+  --color-surface: #2d3555;
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Sponsor marquee */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}

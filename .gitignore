@@ -1,2 +1,16 @@
 .vscode/*
 .DS_Store
+node_modules/
+dist/
+.astro/
+
+# Design docs
+docs/
+
+# AI tooling
+CLAUDE.md
+.claude/
+.superpowers/
+.cursor/
+.cursorrules
+.github/copilot-instructions.md
