@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Alef Distribucija SI",
+    "url": "https://www.alef.com",
+    "logo": "/logos/alef.svg"
+  },
+  {
+    "name": "Bitstamp",
+    "url": "https://www.bitstamp.net",
+    "logo": "/logos/bitstamp.svg"
+  },
+  {
+    "name": "Celtra",
+    "url": "https://www.celtra.com",
+    "logo": "/logos/celtra.svg"
+  },
+  {
+    "name": "3fs",
+    "url": "https://www.3fs.cloud/",
+    "logo": "/logos/3fs.svg"
+  },
+  {
+    "name": "MUK",
+    "url": "https://muk.group",
+    "logo": "/logos/muk.svg"
+  },
+  {
+    "name": "Mainstream",
+    "url": "https://mainstream.eu/",
+    "logo": "/logos/mainstream.svg"
+  },
+  {
+    "name": "Sportradar",
+    "url": "https://www.sportradar.com",
+    "logo": "/logos/sportradar.svg"
+  }
+]

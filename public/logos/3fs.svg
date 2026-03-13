@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 60" width="200" height="60">
+  <defs>
+    <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#b0c4de" />
+    </linearGradient>
+  </defs>
+  <text x="76" y="40" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="34" fill="url(#techGrad)" letter-spacing="-1">3FS</text>
+  <text x="130" y="40" text-anchor="start" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="13" fill="#8899bb" letter-spacing="1.5">.cloud</text>
+</svg>

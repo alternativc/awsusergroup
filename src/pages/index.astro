@@ -1,0 +1,435 @@
+---
+import Layout from '../layouts/Layout.astro';
+import talks from '../data/talks.json';
+import sponsors from '../data/sponsors.json';
+
+// Group talks by date
+const grouped = talks.reduce((acc: Record<string, typeof talks>, talk) => {
+  if (!acc[talk.date]) acc[talk.date] = [];
+  acc[talk.date].push(talk);
+  return acc;
+}, {});
+
+const sortedDates = Object.keys(grouped).sort((a, b) => b.localeCompare(a));
+
+const totalTalks = talks.length;
+const totalSponsors = sponsors.length;
+const yearsSince = new Date().getFullYear() - 2023;
+
+function formatDate(dateStr: string): string {
+  const d = new Date(dateStr + 'T00:00:00');
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+const accentColors = ['#e88b2e', '#6c3fc5', '#b5547a', '#c5623e', '#e8c840', '#a78bca'];
+---
+
+<Layout title="AWS User Group Ljubljana" description="Where cloud builders meet — Ljubljana's AWS community since 2023">
+
+  <!-- Hero -->
+  <section class="relative overflow-hidden">
+    <!-- Background gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-primary via-[#1e2444] to-[#2a1f3d]"></div>
+
+    <!-- Dot grid pattern -->
+    <div class="absolute inset-0 opacity-[0.03]" style="background-image: radial-gradient(circle, #a78bca 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+    <!-- Glow orbs -->
+    <div class="absolute top-1/4 left-1/4 w-[400px] h-[400px] bg-purple/8 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 right-1/4 w-[300px] h-[300px] bg-orange/5 rounded-full blur-3xl"></div>
+
+    <!-- Floating plus signs (from logo) -->
+    <svg class="absolute top-12 right-[10%] w-5 h-5 hidden md:block" viewBox="0 0 24 24" fill="#6c3fc5" opacity="0.35">
+      <path d="M11 2v8H3v2h8v8h2v-8h8v-2h-8V2z"/>
+    </svg>
+    <svg class="absolute top-[30%] right-[4%] w-3.5 h-3.5 hidden md:block" viewBox="0 0 24 24" fill="#a78bca" opacity="0.25">
+      <path d="M11 2v8H3v2h8v8h2v-8h8v-2h-8V2z"/>
+    </svg>
+    <svg class="absolute bottom-[30%] left-[7%] w-4 h-4 hidden md:block" viewBox="0 0 24 24" fill="#e88b2e" opacity="0.3">
+      <path d="M11 2v8H3v2h8v8h2v-8h8v-2h-8V2z"/>
+    </svg>
+    <svg class="absolute top-[18%] left-[10%] w-3 h-3 hidden md:block" viewBox="0 0 24 24" fill="#e8c840" opacity="0.3">
+      <path d="M11 2v8H3v2h8v8h2v-8h8v-2h-8V2z"/>
+    </svg>
+    <svg class="absolute bottom-[15%] right-[18%] w-3 h-3 hidden md:block" viewBox="0 0 24 24" fill="#b5547a" opacity="0.25">
+      <path d="M11 2v8H3v2h8v8h2v-8h8v-2h-8V2z"/>
+    </svg>
+    <svg class="absolute top-[60%] left-[3%] w-2.5 h-2.5 hidden md:block" viewBox="0 0 24 24" fill="#a78bca" opacity="0.2">
+      <path d="M11 2v8H3v2h8v8h2v-8h8v-2h-8V2z"/>
+    </svg>
+
+    <!-- Hexagon outlines (matching logo badge shape) -->
+    <svg class="absolute top-4 right-4 w-56 h-56 hidden md:block" viewBox="0 0 100 100" fill="none" stroke="#6c3fc5" stroke-width="0.5" opacity="0.15">
+      <polygon points="50,3 93,25 93,75 50,97 7,75 7,25"/>
+    </svg>
+    <svg class="absolute -bottom-10 -left-4 w-44 h-44 hidden md:block" viewBox="0 0 100 100" fill="none" stroke="#a78bca" stroke-width="0.5" opacity="0.12">
+      <polygon points="50,3 93,25 93,75 50,97 7,75 7,25"/>
+    </svg>
+    <svg class="absolute top-[40%] right-[2%] w-28 h-28 hidden md:block" viewBox="0 0 100 100" fill="none" stroke="#e88b2e" stroke-width="0.4" opacity="0.08">
+      <polygon points="50,3 93,25 93,75 50,97 7,75 7,25"/>
+    </svg>
+
+    <!-- Cloud outlines -->
+    <svg class="absolute bottom-12 right-[14%] w-24 h-14 hidden md:block" viewBox="0 0 80 48" fill="none" stroke="#6c3fc5" stroke-width="1.2" opacity="0.18">
+      <path d="M16 36c-6.6 0-12-5.4-12-5.4S4 24 10 20c2-8 10-12 18-10 6-6 16-6 20 0 6 2 10 8 8 14s-6 12-14 12H16z"/>
+    </svg>
+    <svg class="absolute top-16 left-[5%] w-20 h-12 hidden md:block" viewBox="0 0 80 48" fill="none" stroke="#a78bca" stroke-width="1.2" opacity="0.15">
+      <path d="M16 36c-6.6 0-12-5.4-12-5.4S4 24 10 20c2-8 10-12 18-10 6-6 16-6 20 0 6 2 10 8 8 14s-6 12-14 12H16z"/>
+    </svg>
+
+    <div class="relative max-w-5xl mx-auto px-6 pt-10 pb-10 md:pt-16 md:pb-16">
+      <div class="flex flex-col md:flex-row items-center gap-8 md:gap-14">
+        <!-- Logo -->
+        <div class="shrink-0 relative">
+          <!-- Glow behind logo -->
+          <div class="absolute inset-0 bg-purple/20 rounded-full blur-2xl scale-110"></div>
+          <img src="/logo.svg" alt="AWS User Group Ljubljana" class="relative w-40 h-40 md:w-52 md:h-52 drop-shadow-2xl" />
+        </div>
+
+        <!-- Text -->
+        <div class="text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight leading-tight mb-3">
+            AWS User Group<br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange to-gold">Ljubljana</span>
+          </h1>
+          <p class="text-lilac text-lg md:text-xl mb-6">Where cloud builders meet</p>
+
+          <!-- Links -->
+          <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
+            <a href="https://www.meetup.com/aws-user-group-ljubljana" target="_blank" rel="noopener"
+              class="inline-flex items-center gap-2 bg-gradient-to-r from-orange to-rust text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:brightness-110 hover:shadow-lg hover:shadow-orange/20 transition-all">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+              Meetup
+            </a>
+            <a href="https://github.com/alternativc/awsusergroup/" target="_blank" rel="noopener"
+              class="inline-flex items-center gap-2 border border-lilac/30 text-lilac px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-lilac/10 hover:border-lilac/50 transition-all">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://sloveniantech.slack.com/" target="_blank" rel="noopener"
+              class="inline-flex items-center gap-2 border border-lilac/30 text-lilac px-5 py-2.5 rounded-lg font-semibold text-sm hover:bg-lilac/10 hover:border-lilac/50 transition-all">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M5.042 15.165a2.528 2.528 0 0 1-2.52 2.523A2.528 2.528 0 0 1 0 15.165a2.527 2.527 0 0 1 2.522-2.52h2.52v2.52zM6.313 15.165a2.527 2.527 0 0 1 2.521-2.52 2.527 2.527 0 0 1 2.521 2.52v6.313A2.528 2.528 0 0 1 8.834 24a2.528 2.528 0 0 1-2.521-2.522v-6.313zM8.834 5.042a2.528 2.528 0 0 1-2.521-2.52A2.528 2.528 0 0 1 8.834 0a2.528 2.528 0 0 1 2.521 2.522v2.52H8.834zM8.834 6.313a2.528 2.528 0 0 1 2.521 2.521 2.528 2.528 0 0 1-2.521 2.521H2.522A2.528 2.528 0 0 1 0 8.834a2.528 2.528 0 0 1 2.522-2.521h6.312zM18.956 8.834a2.528 2.528 0 0 1 2.522-2.521A2.528 2.528 0 0 1 24 8.834a2.528 2.528 0 0 1-2.522 2.521h-2.522V8.834zM17.688 8.834a2.528 2.528 0 0 1-2.523 2.521 2.527 2.527 0 0 1-2.52-2.521V2.522A2.527 2.527 0 0 1 15.165 0a2.528 2.528 0 0 1 2.523 2.522v6.312zM15.165 18.956a2.528 2.528 0 0 1 2.523 2.522A2.528 2.528 0 0 1 15.165 24a2.527 2.527 0 0 1-2.52-2.522v-2.522h2.52zM15.165 17.688a2.527 2.527 0 0 1-2.52-2.523 2.526 2.526 0 0 1 2.52-2.52h6.313A2.527 2.527 0 0 1 24 15.165a2.528 2.528 0 0 1-2.522 2.523h-6.313z"/></svg>
+              Slack
+            </a>
+          </div>
+
+          <!-- Stats -->
+          <div class="flex justify-center md:justify-start gap-4 md:gap-6">
+            <div class="text-center bg-secondary/60 backdrop-blur-sm rounded-xl px-5 py-3 border border-orange/10">
+              <div class="text-2xl font-bold text-orange">{totalTalks}</div>
+              <div class="text-[10px] text-muted uppercase tracking-wider mt-0.5">Talks</div>
+            </div>
+            <div class="text-center bg-secondary/60 backdrop-blur-sm rounded-xl px-5 py-3 border border-lilac/10">
+              <div class="text-2xl font-bold text-lilac">{totalSponsors}</div>
+              <div class="text-[10px] text-muted uppercase tracking-wider mt-0.5">Sponsors</div>
+            </div>
+            <div class="text-center bg-secondary/60 backdrop-blur-sm rounded-xl px-5 py-3 border border-gold/10">
+              <div class="text-2xl font-bold text-gold">{yearsSince}+</div>
+              <div class="text-[10px] text-muted uppercase tracking-wider mt-0.5">Years</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gradient divider -->
+    <div class="h-px bg-gradient-to-r from-transparent via-purple/40 to-transparent"></div>
+  </section>
+
+  <!-- Next Meetup Banner -->
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-r from-purple/10 via-orange/5 to-purple/10"></div>
+    <div class="relative max-w-5xl mx-auto px-6 py-5">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4 bg-secondary/60 backdrop-blur-sm rounded-xl px-6 py-4 border border-purple/20">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-orange to-rust flex items-center justify-center shrink-0">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          </div>
+          <div>
+            <div class="text-xs text-orange font-semibold uppercase tracking-wider">Next Meetup</div>
+            <div class="text-white font-bold">Check our Meetup page for the latest event</div>
+          </div>
+        </div>
+        <a href="https://www.meetup.com/aws-user-group-ljubljana" target="_blank" rel="noopener"
+          class="shrink-0 inline-flex items-center gap-2 bg-gradient-to-r from-orange to-rust text-white px-5 py-2.5 rounded-lg font-semibold text-sm hover:brightness-110 hover:shadow-lg hover:shadow-orange/25 transition-all">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          RSVP on Meetup
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- What to Expect -->
+  <section class="py-10 md:py-14 relative">
+    <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle, #a78bca 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+    <div class="relative max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-3 text-center">
+        What to <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple to-lilac">Expect</span>
+      </h2>
+      <p class="text-muted text-sm text-center mb-8 max-w-2xl mx-auto">
+        We're Ljubljana's most active AWS community — engineers, architects, and cloud enthusiasts meeting monthly to learn, share, and connect.
+      </p>
+
+      <div class="grid sm:grid-cols-3 gap-4">
+        <!-- Monthly Talks -->
+        <div class="bg-secondary/60 rounded-xl p-5 border border-purple/10 hover:border-purple/25 transition-all group">
+          <div class="w-10 h-10 rounded-lg bg-purple/15 flex items-center justify-center mb-3 group-hover:bg-purple/25 transition-colors">
+            <svg class="w-5 h-5 text-purple" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M7 4V2m10 2V2M5 8h14M3 12v6a2 2 0 002 2h14a2 2 0 002-2v-6M3 12V8a2 2 0 012-2h14a2 2 0 012 2v4M3 12h18"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-white mb-1.5">Monthly Meetups</h3>
+          <p class="text-muted text-xs leading-relaxed">1-2 talks per session followed by open networking. Casual atmosphere — grab a drink and geek out about the cloud.</p>
+        </div>
+
+        <!-- Real-World Topics -->
+        <div class="bg-secondary/60 rounded-xl p-5 border border-orange/10 hover:border-orange/25 transition-all group">
+          <div class="w-10 h-10 rounded-lg bg-orange/15 flex items-center justify-center mb-3 group-hover:bg-orange/25 transition-colors">
+            <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-white mb-1.5">Real-World Topics</h3>
+          <p class="text-muted text-xs leading-relaxed">From serverless architectures to database migrations, security to FinOps — practical experience shared by practitioners, not sales pitches.</p>
+        </div>
+
+        <!-- Community -->
+        <div class="bg-secondary/60 rounded-xl p-5 border border-gold/10 hover:border-gold/25 transition-all group">
+          <div class="w-10 h-10 rounded-lg bg-gold/15 flex items-center justify-center mb-3 group-hover:bg-gold/25 transition-colors">
+            <svg class="w-5 h-5 text-gold" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+            </svg>
+          </div>
+          <h3 class="font-bold text-white mb-1.5">Growing Community</h3>
+          <p class="text-muted text-xs leading-relaxed">Developers, DevOps engineers, solutions architects, and CTOs from Slovenia's top tech companies. Free to attend, open to everyone.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="h-px bg-gradient-to-r from-transparent via-purple/30 to-transparent mt-10 md:mt-14"></div>
+  </section>
+
+  <!-- Sponsors Marquee -->
+  <section class="py-6 md:py-8 overflow-hidden relative">
+    <!-- Subtle background texture -->
+    <div class="absolute inset-0 bg-gradient-to-b from-secondary/30 to-transparent"></div>
+
+    <div class="relative max-w-5xl mx-auto px-6 mb-5">
+      <h2 class="text-sm font-semibold text-muted uppercase tracking-widest text-center">Proudly Sponsored By</h2>
+    </div>
+
+    <div class="relative overflow-hidden">
+      <!-- Fade edges -->
+      <div class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-primary to-transparent z-10"></div>
+      <div class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-primary to-transparent z-10"></div>
+
+      <div class="marquee-scroll flex" style="width: max-content;">
+        {[...sponsors, ...sponsors, ...sponsors, ...sponsors].map((sponsor) => (
+          <a href={sponsor.url} target="_blank" rel="noopener"
+            class="flex items-center justify-center mx-8 md:mx-12 shrink-0 opacity-60 hover:opacity-100 transition-all duration-300 hover:scale-110">
+            <img src={sponsor.logo} alt={sponsor.name} class="h-8 md:h-10 w-auto" />
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <div class="h-px bg-gradient-to-r from-transparent via-purple/30 to-transparent mt-6 md:mt-8"></div>
+  </section>
+
+  <style>
+    @keyframes marquee-scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    .marquee-scroll {
+      animation: marquee-scroll 25s linear infinite;
+    }
+    .marquee-scroll:hover {
+      animation-play-state: paused;
+    }
+  </style>
+
+  <!-- Get Involved CTAs -->
+  <section class="py-10 md:py-14 relative">
+    <div class="absolute inset-0 opacity-[0.02]" style="background-image: radial-gradient(circle, #a78bca 1px, transparent 1px); background-size: 32px 32px;"></div>
+
+    <div class="relative max-w-5xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">
+        Get <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange to-gold">Involved</span>
+      </h2>
+
+      <div class="grid md:grid-cols-2 gap-5">
+
+        <!-- Become a Speaker -->
+        <div class="bg-secondary/80 rounded-xl p-6 border border-purple/15 relative overflow-hidden group hover:border-purple/30 transition-all">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple to-lilac"></div>
+          <!-- Decorative hex -->
+          <svg class="absolute -bottom-6 -right-6 w-28 h-28 hidden md:block" viewBox="0 0 100 100" fill="none" stroke="#6c3fc5" stroke-width="0.5" opacity="0.08">
+            <polygon points="50,3 93,25 93,75 50,97 7,75 7,25"/>
+          </svg>
+
+          <div class="relative">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-purple/15 flex items-center justify-center">
+                <svg class="w-5 h-5 text-purple" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/>
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-white">Become a Speaker</h3>
+            </div>
+            <p class="text-muted text-sm leading-relaxed mb-4">
+              Got an AWS war story, a cool project, or lessons learned the hard way? We're always looking for speakers to share their experience. Talks are 20-30 minutes, casual and community-friendly — no polished keynote required.
+            </p>
+            <ul class="space-y-2 mb-5">
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-4 h-4 text-purple mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-lilac">Share knowledge with 50+ AWS practitioners</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-4 h-4 text-purple mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-lilac">Build your personal brand in the local tech scene</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-4 h-4 text-purple mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-lilac">First-time speakers welcome — we'll help you prep</span>
+              </li>
+            </ul>
+            <a href="https://www.meetup.com/aws-user-group-ljubljana" target="_blank" rel="noopener"
+              class="inline-flex items-center gap-2 bg-purple/15 text-purple hover:bg-purple/25 px-4 py-2 rounded-lg text-sm font-semibold transition-all border border-purple/20 hover:border-purple/40">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+              Propose a Talk
+            </a>
+          </div>
+        </div>
+
+        <!-- Become a Sponsor -->
+        <div class="bg-secondary/80 rounded-xl p-6 border border-orange/15 relative overflow-hidden group hover:border-orange/30 transition-all">
+          <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange to-gold"></div>
+          <!-- Decorative hex -->
+          <svg class="absolute -bottom-6 -right-6 w-28 h-28 hidden md:block" viewBox="0 0 100 100" fill="none" stroke="#e88b2e" stroke-width="0.5" opacity="0.08">
+            <polygon points="50,3 93,25 93,75 50,97 7,75 7,25"/>
+          </svg>
+
+          <div class="relative">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg bg-orange/15 flex items-center justify-center">
+                <svg class="w-5 h-5 text-orange" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+              <h3 class="text-lg font-bold text-white">Become a Sponsor</h3>
+            </div>
+            <p class="text-muted text-sm leading-relaxed mb-4">
+              Sponsoring the AWS User Group Ljubljana puts your brand in front of cloud engineers, architects, and decision-makers in Slovenia's most active AWS community. We meet monthly with growing attendance.
+            </p>
+            <ul class="space-y-2 mb-5">
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-4 h-4 text-orange mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-lilac">Logo on our website and event materials</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-4 h-4 text-orange mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-lilac">Direct access to AWS talent for hiring</span>
+              </li>
+              <li class="flex items-start gap-2 text-sm">
+                <svg class="w-4 h-4 text-orange mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-lilac">Venue hosting or food &amp; drinks sponsorship options</span>
+              </li>
+            </ul>
+            <a href="https://www.meetup.com/aws-user-group-ljubljana" target="_blank" rel="noopener"
+              class="inline-flex items-center gap-2 bg-orange/15 text-orange hover:bg-orange/25 px-4 py-2 rounded-lg text-sm font-semibold transition-all border border-orange/20 hover:border-orange/40">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              Get in Touch
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="h-px bg-gradient-to-r from-transparent via-purple/30 to-transparent mt-10 md:mt-14"></div>
+  </section>
+
+  <!-- Talks -->
+  <section class="py-10 md:py-14 relative">
+    <!-- Background texture -->
+    <div class="absolute inset-0 opacity-[0.015]" style="background-image: radial-gradient(circle, #a78bca 1px, transparent 1px); background-size: 40px 40px;"></div>
+
+    <div class="relative max-w-3xl mx-auto px-6">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">
+        Past <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange to-gold">Talks</span>
+      </h2>
+
+      <div class="space-y-6">
+        {sortedDates.map((date, dateIdx) => {
+          const color = accentColors[dateIdx % accentColors.length];
+          return (
+            <div>
+              {/* Date header */}
+              <div class="flex items-center gap-3 mb-2">
+                <span
+                  class="text-xs font-semibold px-3 py-1 rounded-md text-white shadow-lg"
+                  style={`background: ${color}; box-shadow: 0 2px 12px ${color}33;`}
+                >
+                  {formatDate(date)}
+                </span>
+                <div class="flex-1 h-px" style={`background: linear-gradient(to right, ${color}33, transparent);`}></div>
+              </div>
+
+              {/* Talk rows */}
+              <div class="space-y-1">
+                {grouped[date].map((talk) => (
+                  <a
+                    href={talk.url}
+                    target={talk.url.startsWith('http') ? '_blank' : undefined}
+                    rel={talk.url.startsWith('http') ? 'noopener' : undefined}
+                    class="flex items-center justify-between gap-4 bg-secondary/80 hover:bg-surface rounded-lg px-4 py-3 group transition-all duration-200 border border-transparent hover:border-purple/15"
+                    style={`border-left: 2px solid ${color}44;`}
+                  >
+                    <div class="min-w-0">
+                      <div class="text-sm font-semibold text-white group-hover:text-orange transition-colors truncate">
+                        {talk.title}
+                      </div>
+                      <div class="text-xs text-muted mt-0.5">{talk.speaker}</div>
+                    </div>
+                    <div class="shrink-0 flex items-center gap-1.5 text-xs font-medium text-lilac bg-lilac/10 px-2.5 py-1 rounded group-hover:bg-lilac/20 transition-colors">
+                      {talk.url.endsWith('.pdf') ? (
+                        <>
+                          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                          PDF
+                        </>
+                      ) : (
+                        <>
+                          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                          Link
+                        </>
+                      )}
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-surface relative">
+    <div class="absolute inset-0 bg-gradient-to-t from-secondary/20 to-transparent"></div>
+    <div class="relative max-w-5xl mx-auto px-6 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <img src="/logo.svg" alt="" class="w-8 h-8" />
+        <span class="text-sm text-muted">&copy; {new Date().getFullYear()} AWS User Group Ljubljana</span>
+      </div>
+      <div class="flex gap-6">
+        <a href="https://www.meetup.com/aws-user-group-ljubljana" target="_blank" rel="noopener" class="text-sm text-muted hover:text-lilac transition-colors">Meetup</a>
+        <a href="https://github.com/alternativc/awsusergroup/" target="_blank" rel="noopener" class="text-sm text-muted hover:text-lilac transition-colors">GitHub</a>
+        <a href="https://sloveniantech.slack.com/" target="_blank" rel="noopener" class="text-sm text-muted hover:text-lilac transition-colors">Slack</a>
+      </div>
+    </div>
+  </footer>
+
+</Layout>
