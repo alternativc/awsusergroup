@@ -7,6 +7,8 @@ interface Props {
 }
 
 const { title, description } = Astro.props;
+const siteUrl = 'https://www.awsusergroup.net';
+const ogImage = `${siteUrl}/og-image.svg`;
 ---
 
 <!doctype html>
@@ -14,16 +16,83 @@ const { title, description } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+
+    <!-- SEO -->
     <meta name="description" content={description} />
+    <meta name="keywords" content="AWS, Amazon Web Services, Ljubljana, Slovenia, user group, cloud computing, meetup, serverless, DevOps" />
+    <meta name="author" content="AWS User Group Ljubljana" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={siteUrl} />
+
+    <!-- Open Graph -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.awsusergroup.net" />
+    <meta property="og:url" content={siteUrl} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="AWS User Group Ljubljana — Where cloud builders meet" />
+    <meta property="og:site_name" content="AWS User Group Ljubljana" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Theme & Icons -->
+    <meta name="theme-color" content="#1a1f36" />
+    <meta name="msapplication-TileColor" content="#1a1f36" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="apple-touch-icon" href="/logo.svg" />
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <title>{title}</title>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "AWS User Group Ljubljana",
+      "url": siteUrl,
+      "logo": `${siteUrl}/logo.svg`,
+      "description": description,
+      "sameAs": [
+        "https://www.meetup.com/aws-user-group-ljubljana",
+        "https://github.com/alternativc/awsusergroup/"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Ljubljana",
+        "addressCountry": "SI"
+      }
+    })} />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "AWS User Group Ljubljana Meetup",
+      "description": "Monthly meetup for AWS cloud practitioners in Ljubljana, Slovenia",
+      "organizer": {
+        "@type": "Organization",
+        "name": "AWS User Group Ljubljana",
+        "url": siteUrl
+      },
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Ljubljana, Slovenia",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ljubljana",
+          "addressCountry": "SI"
+        }
+      }
+    })} />
   </head>
   <body class="bg-primary text-white min-h-screen">
     <slot />
