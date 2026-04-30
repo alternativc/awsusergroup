@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-02-26",
+    "title": "AWS Organization Security",
+    "speaker": "Anej Skubic",
+    "url": "/meetups/20260226/AWS Org Sec talk - AWS UG LJU.pdf"
+  },
+  {
+    "date": "2026-02-26",
+    "title": "Migrating live production database to AWS using DMS",
+    "speaker": "Žiga Žgalin",
+    "url": "/meetups/20260226/DMS.pptx"
+  },
+  {
     "date": "2026-01-29",
     "title": "How to Succeed with Serverless in a Post-Serverless World",
     "speaker": "Marko ServerlessLife",
