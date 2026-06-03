@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-05-28",
+    "title": "Security testing of cloud environments",
+    "speaker": "Grega Prešeren",
+    "url": "/meetups/20260528/2026-05-AWS-meetup.pdf"
+  },
+  {
+    "date": "2026-05-28",
+    "title": "Building an eBPF-based Firewall from Scratch",
+    "speaker": "Teodor Podobnik",
+    "url": "/meetups/20260528/AWS Meetup - eBPF Firewall.pdf"
+  },
+  {
     "date": "2026-02-26",
     "title": "AWS Organization Security",
     "speaker": "Anej Skubic",
