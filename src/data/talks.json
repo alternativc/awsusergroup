@@ -1,6 +1,12 @@
 [
   {
     "date": "2026-07-30",
+    "title": "It worked in the Notebook, now what?",
+    "speaker": "Ivan Nikolov",
+    "url": "/meetups/20260730/From notebook to production.pdf"
+  },
+  {
+    "date": "2026-07-30",
     "title": "DevOps Automation",
     "speaker": "Mitja Hofer",
     "url": "/meetups/20260730/AWS DevOps Agent in SRE workflow.pdf"
