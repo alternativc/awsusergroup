@@ -6,6 +6,12 @@
     "url": "/meetups/20260924/Combining CloudWatch Across Accounts and Regions.pdf"
   },
   {
+    "date": "2026-09-24",
+    "title": "The Hidden Risk in Mono-Repos: GH Actions, OIDC and Limited Claim Validation",
+    "speaker": "Timotej Petrovčič",
+    "url": "/meetups/20260924/The Hidden Risk in Mono-Repos.pdf"
+  },
+  {
     "date": "2026-07-30",
     "title": "It worked in the Notebook, now what?",
     "speaker": "Ivan Nikolov",
