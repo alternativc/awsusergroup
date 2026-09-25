@@ -1,5 +1,11 @@
 [
   {
+    "date": "2026-07-30",
+    "title": "DevOps Automation",
+    "speaker": "Mitja Hofer",
+    "url": "/meetups/20260730/AWS DevOps Agent in SRE workflow.pdf"
+  },
+  {
     "date": "2026-05-28",
     "title": "Security testing of cloud environments",
     "speaker": "Grega Prešeren",
